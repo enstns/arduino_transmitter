@@ -1,3 +1,4 @@
+nRF24L01 transmitter and receiver Arduino codes.
 # flask-file-server
 
 ## Getting started
@@ -12,7 +13,7 @@ pip install Flask
 Need more example? Run code and see [`localhost`](http://127.0.0.1:4000)
 
 * `To List All File`:
-    * `Requset` is **GET**
+    * `Request` is **GET**
     * `URL` is  http://127.0.0.1:4000/filelist
     * `PARAMETER` is ;
         * `folder` : to list different folder's files which is in main directory (not necessary if wants to list maindirectory)
@@ -20,7 +21,7 @@ Need more example? Run code and see [`localhost`](http://127.0.0.1:4000)
         * http://127.0.0.1:4000/filelist
     
 * `To Open Selected File`:
-    * `Requset` is **GET**
+    * `Request` is **GET**
     * `URL` is  http://127.0.0.1:4000/openfile
     * `PARAMETERS` are ;
         * `file_name` : the selected file name which is wanted to open...,
@@ -29,12 +30,13 @@ Need more example? Run code and see [`localhost`](http://127.0.0.1:4000)
         * http://127.0.0.1:4000/openfile?file_name=13.png&folder_path=files\test2
 
 * `To Update Main Directory`:
-    * `Requset` is **POST**
+    * `Request` is **POST**
     * `URL` is  http://127.0.0.1:4000/update/maindirectory
     * `BODY` is ;
         ```json
         {
-            "password" : "server password to change directory!",
-            "new_directory" : "new main directory.."
+            "password" : "12345",
+            "new_directory" : "C:\\Users\\admin\\Desktop\\"
         }
         ```
+
